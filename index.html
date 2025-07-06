@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <title>ArtVibe</title>
+    <style>
+        .extra-art-hidden {
+            display: none;
+        }
+        html {scroll-behavior: smooth;}
+    </style>
+
+</head>
+<body style="font-family: 'Baloo 2',sans-serif;" class="white">
+    
+    <!-- HEADER -->
+    
+    <header class="w-full bg-amber-50 shadow-gray-50" >
+        <nav class="shadow-gray-50 flex flex-col md:flex-row justify-between items-center py-8 px-6 space-y-3 md:space-y-0 md:space-x-10 shadow md:h-10">
+            <!-- logo -->
+            
+            <div class="font-black text-xl md:text-2xl text-amber-700">
+                ArtVibe
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-15 text-gray-700 font-bold text-md md:text-xl">
+                <a href="#" class="hover:text-amber-600 transition">Home</a>
+                <a href="#gallery" class="hover:text-amber-600 transition">Explore</a>
+                <a href="#contact" class="hover:text-amber-600 transition">Contact</a>
+                
+                <a href="#cart" class="hover:text-amber-600 transition relative" id="cart-link">
+                    Cart
+                    <span id="cart-count" class="absolute -top-3 -right-5 bg-red-600 text-white text-xs font-bold rounded-full px-2">0</span>
+                </a>
+
+            </div>
+        </nav>        
+    </header>
+
+    <!-- MAIN CONTENT  -->
+
+    <section class= "bg-[#f1dfc5] w-full flex flex-col md:flex-row justify-between items-center px-8 py-12">
+    <!-- Text Content -->
+    <div class="md:w-1/2 mb-6 md:mb-0">
+        <h1 class="md:ml-15 font-extrabold text-3xl md:text-4xl text-gray-800 mb-4">
+        Find the Art That Inspires You
+        </h1>
+        <p class="md:ml-15 mr-15 font-medium md:text-lg text-md text-gray-600">
+        At ArtVibe, we believe art is more than décor — it’s a reflection of who you are. 
+        Dive into a collection that balances elegance, expression, and authenticity.
+        </p>
+        <a href="#gallery" 
+        class="md:ml-15 inline-flex justify-center items-center h-10 w-36 md:h-12 md:w-44 mt-6 bg-amber-600 rounded-2xl font-semibold text-white hover:bg-amber-400 hover:text-black transition">
+        Start Exploring
+        </a>
+    </div>
+
+    <!-- Image Content -->
+    <div class="md:w-1/2 flex justify-center">
+        <img 
+        src="Images/Impressionist Gallery Showcase.png" 
+        alt="Hero Art" 
+        class="w-full max-w-xl rounded-xl object-cover drop-shadow-2xl "
+        >
+    </div>
+    </section>
+
+    <!-- CURATOR'S MESSAGE SECTION -->
+    <section class="border-20 border-[#f9e8e3] w-full px-6 py-12 text-center bg-[#f9e8e3]">
+    <h2 class=" text-2xl md:text-3xl font-semibold text-rose-800 mb-6">
+        Pause. Reflect. Then Explore.
+    </h2>
+    <p class=" max-w-3xl mx-auto text-base md:text-lg text-gray-600 leading-relaxed">
+        "Art is not just a product — it's a reflection of emotion, culture, and time. Every piece you see here has been chosen to evoke thought, feeling, and imagination. Whether you're a collector or a casual admirer, we invite you to explore what speaks to your soul."
+    </p>
+    </section>
+
+
+
+    <!-- GALLARY -->
+    <section class="px-6 py-12 bg-[#f1dfc5]" id="gallery">
+        <h2 class="text-2xl md:text-4xl font-bold text-center mb-15">
+            Explore Our Collection
+        </h2>
+
+        <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Art Card -->
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/StarryNight.jpg" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Starry Night</h3>
+                    <p class="text-green-600 font-bold">₹899</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/Horse.avif" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Untamed Grace</h3>
+                    <p class="text-green-600 font-bold">₹1,499</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/RadheKrishna.jpg" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Divine Union</h3>
+                    <p class="text-green-600 font-bold">₹1,999</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/Girl-Painting.avif" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Reflections of Her</h3>
+                    <p class="text-green-600 font-bold">₹1,299</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/landscape.avif" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Whispers of the Valley</h3>
+                    <p class="text-green-600 font-bold">₹1,099</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class=" bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/garden.jpg" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Blooms Beyond Time</h3>
+                    <p class="text-green-600 font-bold">₹1,199</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="extra-art-hidden bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/lion.jpg" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">King in Silence</h3>
+                    <p class="text-green-600 font-bold">₹1,599</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="extra-art-hidden bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/eye.jpg" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Through the Iris</h3>
+                    <p class="text-green-600 font-bold">₹1,299</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="extra-art-hidden bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+                <img src="Images/peacock.jpg" alt="Art Title" class="w-full h-55 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg text-gray-800">Royal Bloom</h3>
+                    <p class="text-green-600 font-bold">₹999</p>
+                    <button class="add-to-cart mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-800 transition">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- View All Button -->
+        <div class="view-all-btn w-full flex justify-center mt-10">
+            <button class="px-6 py-3 text-xl font-semibold bg-blue-500 text-white rounded-full shadow-md hover:scale-105 transition duration-300">
+                View All Artworks
+            </button>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="px-6 py-12 bg-[#fff8ef] ">
+        
+        <h2 class="text-2xl md:text-4xl font-bold text-center mb-15">
+            Stories from Our Walls
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <div class="bg-[#f9e8e3] flex flex-col items-center justify-center p-6 rounded-xl shadow-md max-w-md mx-auto mb-10 hover:scale-105 transition">
+                <!-- Profile Image -->
+                <img src="Images/profile.avif" alt="Reviewer" class="w-24 h-24 object-cover rounded-full mb-4 border-2 border-white shadow-md">
+
+                <!-- Reviewer Name -->
+                <p class="font-semibold text-lg text-gray-800">Vanshika, Jaipur</p>
+
+                <!-- Review Text -->
+                <p class="text-center text-gray-700 italic mt-3 mb-4 px-4">
+                    “Absolutely stunning piece. Adds so much warmth to my room!”
+                </p>
+
+                <!-- Rating -->
+                <p class="text-yellow-500 text-xl">★★★★☆</p>
+            </div>
+
+            <div class="bg-[#f9e8e3] flex flex-col items-center justify-center p-6 rounded-xl shadow-md max-w-md mx-auto mb-10 hover:scale-105 transition">
+                <!-- Profile Image -->
+                <img src="Images/profile3.jpg" alt="Reviewer" class="w-24 h-24 object-cover rounded-full mb-4 border-2 border-white  shadow-md">
+
+                <!-- Reviewer Name -->
+                <p class="font-semibold text-lg text-gray-800">Jeet Singh, Amritsar</p>
+
+                <!-- Review Text -->
+                <p class="text-center text-gray-700 italic mt-3 mb-4 px-4">
+                    “The colors felt divine, and the delivery was prompt. Proud to support such soulful Indian art.”
+                </p>
+
+                <!-- Rating -->
+                <p class="text-yellow-500 text-xl">★★★★★</p>
+            </div>
+
+
+            <div class="bg-[#f9e8e3] flex flex-col items-center justify-center p-6 rounded-xl shadow-md max-w-md mx-auto mb-10 hover:scale-105 transition">
+                <!-- Profile Image -->
+                <img src="Images/profile2.png" alt="Reviewer" class="w-24 h-24 object-cover rounded-full mb-4 border-2 bg-white border-white shadow-md">
+
+                <!-- Reviewer Name -->
+                <p class="font-semibold te;xt-lg text-gray-800">Meera T., Pune</p>
+
+                <!-- Review Text -->
+                <p class="text-center text-gray-700 italic mt-3 mb-4 px-4">
+                    “I’ve already ordered twice — every piece feels so unique and personal. A must-visit for art lovers.”
+                </p>
+
+                <!-- Rating -->
+                <p class="text-yellow-500 text-xl">★★★★★</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+
+    <section class="bg-[#e6f4ea] px-6 py-16">
+    <h2 class="text-2xl md:text-4xl font-bold text-center text-[#2f3e46] mb-12 animate-fade-up transition duration-700">
+        The Heart Behind ArtVibe
+    </h2>
+
+    <div class="flex flex-col md:flex-row items-center gap-10">
+        <!-- Image -->
+        <div class="md:w-1/2 ">
+        <img src="Images/bg2.png" class="w-full h-72 md:h-96 object-cover rounded-xl shadow-lg" alt="About Us Image" />
+        </div>
+
+        <!-- Box -->
+        <div class="md:w-1/2 hover:scale-105 transition">
+        <div class="bg-[#6a9c89] rounded-2xl shadow-xl p-8 md:p-10 text-center">
+            <p class="font-medium text-lg md:text-xl text-[#e6f4ea] leading-relaxed mb-6">
+            ArtVibe was born from the idea that every wall deserves a story.
+            We believe art is more than just decoration — it’s a reflection of thought, tradition, and soul.
+            Our curated collection brings together modern creativity and timeless expression,
+            making it easier for you to discover pieces that truly resonate.
+            </p>
+
+            <p class="italic font-bold text-white mb-6">
+            - Let your space tell a story — one brushstroke at a time.
+            </p>
+
+            <a href="#"
+            class="inline-flex justify-center items-center h-11 w-44 bg-[#f1dfc5] hover:bg-[#e6b97b] hover:text-[#e6f4ea] text-[#012e1d]  font-semibold rounded-xl transition duration-300">
+            Discover Our Journey
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <footer class="bg-[#fff8ef] border-t border-gray-300 px-6 py-10 text-gray-700">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+            <!-- Brand Section -->
+            <div>
+            <h3 class="text-2xl font-bold text-amber-700 mb-2">ArtVibe</h3>
+            <p class="text-sm">Bringing walls to life with curated original artworks.</p>
+            </div>
+
+            <!-- Connect Section -->
+            <div>
+            <h4 class="text-lg font-semibold mb-2">Connect</h4>
+            <p class="text-sm mb-2">vanshikachawla201@gmail.com</p>
+            <div class="flex justify-center md:justify-start space-x-5 text-xl text-gray-700">
+                <a href="https://instagram.com/" target="_blank" class="hover:text-pink-600 transition">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" class="hover:text-blue-600 transition">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" class="hover:text-gray-900 transition">
+                <i class="fab fa-github"></i>
+                </a>
+            </div>
+            </div>
+
+            <!-- Quick Links or Newsletter Section -->
+            <div>
+            <h4 class="text-lg font-semibold mb-2">Quick Links</h4>
+            <ul class="text-sm space-y-1">
+                <li><a href="#gallery" class="hover:text-amber-600 transition">Explore Art</a></li>
+                <li><a href="#contact" class="hover:text-amber-600 transition">Contact</a></li>
+                <li><a href="#" class="hover:text-amber-600 transition">Terms & Policies</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-300 mt-8 pt-4 text-center">
+            <p class="text-sm text-gray-600">
+            Made with ❤️ by <span class="font-semibold">Vanshika</span> &copy; 2025
+            </p>
+        </div>
+    </footer>
+
+    <button 
+    id="top-btn" 
+    class="fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full hidden hover:bg-blue-800 shadow-lg transition"
+    >
+    ⬆️ Top
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
