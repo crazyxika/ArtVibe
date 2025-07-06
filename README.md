@@ -20,12 +20,17 @@
 ### 🔹 Home Section
 ![Home Section](Images/Screenshot1.png)
 
+
 ### 🔹 Gallery & Art Cards
 ![Gallery Section](Images/Screenshot2.png)
 
+
 ### 🔹 Footer & Reviews
 ![Footer](Images/Screenshot3.png)
+
+
 ![Reviews](Images/Screenshot4.png)
+
 
 ---
 
