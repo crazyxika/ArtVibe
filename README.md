@@ -25,7 +25,7 @@
 
 ### 🔹 Footer & Reviews
 ![Footer](Images/screenshot3.png)
-![Reviews](Images/Screenshot3.jpg)
+![Reviews](Images/Screenshot4.png)
 
 ---
 
